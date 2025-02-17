@@ -22,6 +22,9 @@ h1, h2, h3, h4, h5, h6, p {
 button{
     cursor: pointer;
 }
+img{
+    display: block;
+}
 
 /* region header */
 .header {
@@ -70,7 +73,6 @@ text-transform: uppercase;
 color: #2e2f42;
 }
 
-
 .nav-list-header{
 display: flex;
 align-items: center;
@@ -89,7 +91,6 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #2e2f42 ;
-display: block;
 }
 
 .item-nav-link:hover,
@@ -109,7 +110,8 @@ align-items: center;
 gap: 40px;
 }
 
-.email-link {font-weight: 400;
+.email-link {
+font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
@@ -188,7 +190,6 @@ line-height: 1.5;
 letter-spacing: 0.04em;
 color: #fff;
 background-color: #4d5ae5;
-/* width: 169px; */
 height: 56px;
 border-radius: 4px;
 cursor: pointer;
@@ -221,11 +222,24 @@ margin: 0 auto;
     display: none;
 }
 
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .section-list-one{
 display: flex;
 gap: 24px;
-margin-top: 120px;
-margin-bottom: 120px;
+padding-top: 120px;
+padding-bottom: 120px;
 }
 
 .section-list-item-one{
@@ -252,15 +266,16 @@ color: #434455;
 
 /* region section photo */
 
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
 .section-photo {
 background: #f4f4fd;
 padding: 120px 0;
-}
-
-.container{
-max-width: 1158px;
-padding: 0 15px;
-margin: 0 auto;
+/* padding: 32px 0; */
 }
 
 .conteiner-section-ph{
@@ -269,7 +284,6 @@ margin: 0 auto;
     justify-content: center;
     flex-wrap: wrap;
 }
-
 
 .section-ph-title {
 text-transform: capitalize;
@@ -285,18 +299,16 @@ margin-bottom: 72px;
 .section-ph-list {
 display: flex;
 gap: 24px;
-width: calc((100% - 72px ) / 4);
+width: calc((100% - 72px) / 4);
 }
 
 .section-ph-item {
-    display: block;
 border-radius: 0 0 4px 4px;
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
-background-color: #FFFFFF;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -305,6 +317,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 background: #fff;
 }
 
+.section-ph-info{}
 
 .section-ph-item-name {
 font-weight: 500;
@@ -313,8 +326,8 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
 padding-top: 32px;
-padding-bottom: 8px;
-
+margin-bottom: 8px;
+text-align: center;
 }
 
 .section-item-role {
@@ -324,21 +337,27 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
 padding-bottom: 32px;
+text-align: center;
 }
 /* end region section photo */
 
 /* region portfolio */
 
-.portfolio {
+.portfolio { 
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
+.container{
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
 .container-portfolio{
     max-width: 1158px;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    padding-top: 120px;
-    padding-bottom: 120px;
 }
 
 .portfolio-title {
@@ -362,11 +381,14 @@ padding-bottom: 32px;
 }
 
 .portfolio-item {
-    display: block;
     width: calc((100% - 24px * 2) / 3);
     flex-wrap: wrap;
-    border: 1px solid #e7e9fc;
-    border-top: none;
+}
+
+.pornfolio-item-name{
+padding: 32px 16px;
+border: 1px solid #e7e9fc;
+border-top: none;
 }
 
 .portfolio-item-card {
@@ -375,7 +397,6 @@ padding-bottom: 32px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding: 16px;
     margin-bottom: 8px;
 }
 
@@ -385,8 +406,6 @@ padding-bottom: 32px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    padding-left: 16px;
-    padding-bottom: 32px;
 }
 
 /* end region portfolio */
@@ -394,8 +413,14 @@ padding-bottom: 32px;
 /* region footer */
 .footer {
     background: #2e2f42;
+    padding: 100px 0;
 }
 
+.container{
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
 .conteiner-footer{
 width: 1440px;
 height: 312px;
@@ -404,9 +429,6 @@ height: 312px;
 .container-logo-style{
     width: 264px;
     height: 72px;
-    padding: 100px 0;
-    /* padding-top: 140px;
-    padding-bottom: 100px; */
 }
 
 .footer-logo-style {
@@ -417,8 +439,8 @@ height: 312px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    display: inline-block;
     margin-bottom: 16px;
+    display: inline-block;
 }
 
 .logo-style-light {
@@ -429,8 +451,6 @@ height: 312px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #f4f4fd;
-    
-    
 }
 
 .footer-item-text {
