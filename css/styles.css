@@ -12,7 +12,7 @@ a{
 
 ul, ol {
     list-style-type: none;
-    margin: 0;
+    margin-left: 0;
     padding: 0;
 }
 
@@ -156,6 +156,7 @@ padding: 188px 0;
     max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .hero-conteiner{
@@ -205,6 +206,7 @@ background-color: #404BBF
 /* region section */
 .section-text-one{
 background-color: #fff;
+padding: 120px 0;
 }
 
 .container{
@@ -222,7 +224,7 @@ margin: 0 auto;
     display: none;
 }
 
-.visually-hidden{
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -238,8 +240,6 @@ margin: 0 auto;
 .section-list-one{
 display: flex;
 gap: 24px;
-padding-top: 120px;
-padding-bottom: 120px;
 }
 
 .section-list-item-one{
@@ -270,12 +270,12 @@ color: #434455;
     max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
+    padding: 32px 0;
 }
 
 .section-photo {
 background: #f4f4fd;
 padding: 120px 0;
-/* padding: 32px 0; */
 }
 
 .conteiner-section-ph{
@@ -299,7 +299,7 @@ margin-bottom: 72px;
 .section-ph-list {
 display: flex;
 gap: 24px;
-width: calc((100% - 72px) / 4);
+width: calc(( 100% - 72px ) / 4);
 }
 
 .section-ph-item {
@@ -421,7 +421,7 @@ border-top: none;
     padding: 0 15px;
     margin: 0 auto;
 }
-.conteiner-footer{
+.container-footer{
 width: 1440px;
 height: 312px;
 
@@ -443,8 +443,13 @@ height: 312px;
     display: inline-block;
 }
 
+.footer-logo-style a {
+display: inline-block;
+}
+
 .logo-style-light {
     font-family: "Raleway", sans-serif;
+    display: inline-block;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
